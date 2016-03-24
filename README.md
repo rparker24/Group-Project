@@ -12,7 +12,7 @@ An interactive map which provides users with a variety of information and facts 
 Contributors:
 
 Karina GitHub
-<a href="http:///github.com/kevarnold02">GitHub</a>
+Kevin <a href="http:///github.com/kevarnold02">GitHub</a>
 Robert GitHub
 
 
