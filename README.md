@@ -14,7 +14,7 @@ An interactive map which provides users with a variety of information and facts 
 
 * Karina Arevalo [GitHub](https://github.com/kjarevalo)  
 * Kevin Arnold [GitHub](https://github.com/Kevarnold02)
-* Robert Parker GitHub [GitHub](https://github.com/rparker24)
+* Robert Parker [GitHub](https://github.com/rparker24)
 
 
 ###Technologies used:
