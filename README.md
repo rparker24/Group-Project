@@ -10,6 +10,7 @@ An interactive map which provides users with a variety of information and facts 
 
 
 ###Contributors:  
+---
 
 * Karina Arevalo [GitHub](https://github.com/kjarevalo)  
 * Kevin Arnold [GitHub](https://github.com/Kevarnold02)
@@ -17,7 +18,7 @@ An interactive map which provides users with a variety of information and facts 
 
 
 ###Technologies used:
-
+---
 * HTML
 * CSS
  * BootStrap / Materialize / Skeleton Grid
@@ -27,7 +28,7 @@ An interactive map which provides users with a variety of information and facts 
 
 
 ###APIs
-
+---
 * Primary:
  * Google Maps
  * Wikipedia
@@ -38,12 +39,12 @@ An interactive map which provides users with a variety of information and facts 
 
 
 ###Code We're proud of
-
+---
 Ideally a bit of code that you really liked or something interesting from the Project (fill out this section after you're finished
 
 
 
 
 ###License
-
+---
 MIT License. Copyright 2009-2016 Rutgers Coding Bootcamp.
