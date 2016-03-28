@@ -30,7 +30,6 @@ function success(pos) {
   document.getElementById('submit').addEventListener('click', function() {
     geocodeAddress(geocoder, map);
   });
-
 };
 
 function geocodeAddress(geocoder, resultsMap) {
