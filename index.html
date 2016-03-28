@@ -11,7 +11,7 @@
 	<!-- Firebase Reference -->
 	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 	<!-- Moment.js Reference -->
-	<script src="http://momentjs.com/downloads/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/geolocate.js"></script>
 
 </head>
@@ -22,11 +22,27 @@
 	</div>
 
 	<div id="map"></div>
+	<br>
+	<table class="table table-hover" id="articleTable">
+		<thead>
+			<tr>
+				<th>Headline</th>
+				<th>Snippet</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+
+			</tr>
+		</tbody>
+	</table>
 
 	<footer>
 		<p>&copy;</p>
 	</footer>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdLL0PI-ppWjXt1x0yy8LA0wYgcYDm2o&callback=initMap"
 	    async defer></script>
+	<script type="text/javascript" src="assets/javascript/nyt.js"></script>
 </body>
 </html>

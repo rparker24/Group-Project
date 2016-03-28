@@ -80,10 +80,17 @@
               map: resultsMap,
               position: results[0].geometry.location
             });
+            var infowindow = new google.maps.InfoWindow({
+              content: whatever
+            });
+            marker.addListener('click', function() {
+              infowindow.open(map, marker);
+            });
           } else {
             alert('Geocode was not successful for the following reason: ' + status);
           }
         });
+
       }
 
       function error(err) {
