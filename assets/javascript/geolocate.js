@@ -22,7 +22,7 @@ function success(pos) {
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'Hello World!'
+    title: 'Your location'
   });
 
   var geocoder = new google.maps.Geocoder();
@@ -30,7 +30,6 @@ function success(pos) {
   document.getElementById('submit').addEventListener('click', function() {
     geocodeAddress(geocoder, map);
   });
-
 };
 
 function geocodeAddress(geocoder, resultsMap) {
@@ -43,6 +42,12 @@ function geocodeAddress(geocoder, resultsMap) {
         map: resultsMap,
         position: results[0].geometry.location
       });
+      google.maps.event.addListener(marker, "click", function (event) {
+          var latitude = event.latLng.lat();
+          var longitude = event.latLng.lng();
+          console.log( latitude + ', ' + longitude );
+      }); 
+      debugger;
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
