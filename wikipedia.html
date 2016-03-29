@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<script type="text/javascript"></script>
+  <title></title>
+  <script type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
 <body>
@@ -23,22 +23,18 @@
 //An approch to getting the summary / leading paragraphs / section 0 out of Wikipedia articlies within the browser using JSONP with the Wikipedia API: http://en.wikipedia.org/w/api.php
 
 <script>
-
-
-
     $('#search').click(function(){
         var searchText = $('#inputText').val().trim();
             searchText = searchText.replace(" ", "_");
-        var url = "http://en.wikipedia.org/wiki/" + searchText;
+        var url = "https://en.wikipedia.org/wiki/" + searchText;
         var title = url.split("/");
           title = title[title.length - 1];
           console.log(url);
         //Get Leading paragraphs (section 0)
-        $.getJSON("http://en.wikipedia.org/w/api.php?action=parse&page=" + title + "&prop=text&section=0&format=json&callback=?", function (data) {
+        $.getJSON("https://en.wikipedia.org/w/api.php?action=parse&page=" + title + "&prop=text&section=0&format=json&callback=?", function (data) {
             for (text in data.parse.text) {
                 var text = data.parse.text[text].split("<p>");
                 var pText = "";
-
                 for (p in text) {
                     //Remove html comment
                     text[p] = text[p].split("<!--");
@@ -48,7 +44,6 @@
                         text[p][0] += "</p> ";
                     }
                     text[p] = text[p][0];
-
                     //Construct a string from paragraphs
                     if (text[p].indexOf("</p>") == text[p].length - 5) {
                         var htmlStrip = text[p].replace(/<(?:.|\n)*?>/gm, '') //Remove HTML
@@ -67,11 +62,7 @@
                 document.getElementById('div_text').innerHTML = pText
             }
         });
-
     });
-
-
 </script>
 </body>
 </html>
-
