@@ -14,12 +14,15 @@ $('#submit').on('click', function() {
 	            	var headline = results[i].headline.main;
 	            	var snippet = results[i].snippet;
 	            	var date = results[i].pub_date;
+                    var shorterDate = date.substring(0,10);
+                    var fancyDate = moment(shorterDate).format("MMMM Do YYYY");
+
 
 	            	console.log(headline);
 	            	console.log(snippet);
-	            	console.log(date);
+	            	console.log(fancyDate);
 
-	            	$("#articleTable > tbody").append("<tr><td>" + headline + "</td><td>" + snippet + "</td><td>" + date + "</td></tr>");
+	            	$("#articleTable > tbody").append("<tr><td>" + headline + "</td><td>" + snippet + "</td><td>" + fancyDate + "</td></tr>");
             	}
 			})
 });
