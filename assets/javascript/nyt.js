@@ -6,7 +6,7 @@ $('#submit').on('click', function() {
                 method: 'GET'
             })
             .done(function(response) {
-            	console.log(response);
+            	// console.log(response);
             	var results = response.response.docs;
             	//clear out previous results from table
             	$('#articleTable > tbody').html("");
@@ -17,10 +17,9 @@ $('#submit').on('click', function() {
                     var shorterDate = date.substring(0,10);
                     var fancyDate = moment(shorterDate).format("MMMM Do YYYY");
 
-
-	            	console.log(headline);
-	            	console.log(snippet);
-	            	console.log(fancyDate);
+	            	// console.log(headline);
+	            	// console.log(snippet);
+	            	// console.log(fancyDate);
 
 	            	$("#articleTable > tbody").append("<tr><td>" + headline + "</td><td>" + snippet + "</td><td>" + fancyDate + "</td></tr>");
             	}
