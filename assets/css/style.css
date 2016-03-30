@@ -12,3 +12,7 @@
 #recentPlaces tbody tr {
 	font-size: 12px;
 }
+
+#div_text {
+	float: left;
+}
