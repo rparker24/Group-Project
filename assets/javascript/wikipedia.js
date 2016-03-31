@@ -38,7 +38,6 @@ $('#search').click(function(){
           
           pText = pText.substring(0, pText.length - 2); //Remove extra newline
           pText = pText.replace(/\[\d+\]/g, ""); //Remove reference tags (e.x. [1], [4], etc)
-          document.getElementById('textarea').value = pText
           document.getElementById('div_text').innerHTML = pText
       }
   });
