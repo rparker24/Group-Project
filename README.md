@@ -26,6 +26,7 @@ An interactive map which provides users with a variety of information and facts 
  * jQuery
  * AJAX
 * [Trello](https://trello.com/b/5sGXT7Ey/team-5ive)
+* Mindjet Mind Manager
 
 
 ###APIs
