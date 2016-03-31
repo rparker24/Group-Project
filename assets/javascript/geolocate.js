@@ -46,8 +46,15 @@ function geocodeAddress(geocoder, resultsMap) {
           var latitude = event.latLng.lat();
           var longitude = event.latLng.lng();
           console.log( latitude + ', ' + longitude );
-      }); 
-      debugger;
+      });
+      // NOT WORKING - Info Window
+      // var contentString = "this place";
+      // var infowindow = new google.maps.InfoWindow({
+      //   content: contentString
+      // });
+      // marker.addListener('click', function() {
+      //   infowindow.open(map, marker);
+      // });
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }

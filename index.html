@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>The Unknown Group Project</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<!-- Firebase Reference -->
-	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
-	<!-- Moment.js Reference -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/geolocate.js"></script>
+  <meta charset="UTF-8">
+  <title>The Unknown Group Project</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Firebase Reference -->
+  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/geolocate.js"></script>
 
 </head>
 <body>
-	<div id="floating-panel">
-	  <input id="address" type="textbox" value="Boston">
-	  <input id="submit" type="button" value="Geocode">
-	</div>
+  <div id="floating-panel">
+    <input id="address" type="textbox" value="Boston">
+    <input id="submit" type="button" value="Geocode">
+  </div>
 
-	<div id="map"></div>
-	<br>
-	<table class="table table-hover" id="articleTable">
-		<thead>
-			<tr>
-				<th>Headline</th>
-				<th>Snippet</th>
-				<th>Date</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
+  <div id="map"></div>
+  <div id="recentPlacesList">
+    <h4>Recently Searched<h4>
+    <table class="table table-bordered table-hover" id="recentPlaces">
+      <thead>
+        <tr>
+          <th>Place</th>
+          <th>Date and Time</th>
+        </tr>
+      </thead>
+      <tbody>
 
-			</tr>
-		</tbody>
-	</table>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <table class="table table-hover" id="articleTable">
+    <thead>
+      <tr>
+        <th>Headline</th>
+        <th>Snippet</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
 
-	<footer>
-		<p>&copy;</p>
-	</footer>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdLL0PI-ppWjXt1x0yy8LA0wYgcYDm2o&callback=initMap"
-	    async defer></script>
-	<script type="text/javascript" src="assets/javascript/nyt.js"></script>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <p>&copy;</p>
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdLL0PI-ppWjXt1x0yy8LA0wYgcYDm2o&callback=initMap"
+      async defer></script>
+  <script type="text/javascript" src="assets/javascript/nyt.js"></script>
+  <script type="text/javascript" src="assets/javascript/firebase.js"></script>
 </body>
 </html>

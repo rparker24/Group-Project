@@ -1,4 +1,15 @@
+
 #map {
   width: 500px;
   height: 400px;
+  float: left;
+}
+
+#recentPlacesList {
+	float: left;
+	margin-left: 100px;
+}
+
+#recentPlaces tbody tr {
+	font-size: 12px;
 }
