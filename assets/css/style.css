@@ -1,13 +1,15 @@
-
+#floating-panel {
+	padding-bottom: 25px;
+}
 #map {
-  width: 500px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
   float: left;
 }
 
 #recentPlacesList {
 	float: left;
-	margin-left: 100px;
+	margin-left: 60px;
 }
 
 #recentPlaces tbody tr {

@@ -18,7 +18,7 @@ function success(pos) {
     zoom: 8,
     center: myLatLng
   });
-
+  debugger;
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,

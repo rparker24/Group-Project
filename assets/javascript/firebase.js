@@ -1,9 +1,7 @@
 var database = new Firebase("https://recent-places.firebaseio.com/");
 
-
-database.on('child_added', function(childSnapshot, prevChildKey){
-
-	console.log(childSnapshot.val());
+var dbLimit = database.endAt().limit(10);
+dbLimit.on('child_added', function(childSnapshot, prevChildKey){
 
 	var placeSearched = childSnapshot.val().placeName;
 	var timeSearched = childSnapshot.val().time;
@@ -23,8 +21,9 @@ $('#submit').on('click', function() {
 		time: timeSearched
 	};
 
-	debugger;
 	database.push(newSearch);
+
+	$('#recentPlaces > tbody > tr:first-child').remove();
 
 	return false;
 });
